@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-icons-1.5.0/bootstrap-icons.css">
+    <style>
+        .inp::placeholder{
+            color:white;
+        }
+        .inp{
+            color:white!important;
+        }
+    </style>
+</head> 
+<body>
+    <div class="box" style="width: 100%!important; position: relative; margin: 0 auto!important;">
+        <div class="boxx" style="position: absolute; width: 100%; height: 100%; background: rgba(0,0,25,0.8);">
+            <div class="nav p-3 text-right" style="background-color: #16223A; width: 86.32%; margin-left: 100px;">
+                <button class="nav-item btn my-1 btn-outline-warning text-light" style="border-radius: 0; margin-left: 600px;">HOME</button>
+                <button class="nav-item btn m-1 btn-outline-warning text-light" style="border-radius: 0;">ABOUT US</button>
+                <button class="nav-item btn m-1 text-light" style="border-radius: 0;">COURSES</button>
+                <button class="nav-item btn m-1 text-light" style="border-radius: 0;">CONTACT</button>
+                <button type="button" class="nav-item btn m-1 text-light" style="border-radius: 0;">EXTERNAL</button>
+            </div>
+            <h6 class="text-light" style="margin-left:530px; margin-top: 180px;">GRADUATE SCHOOL OF MANAGEMENT</h6>
+            <h1 class="text-light mt-3 " style="font-size: 50px; font-weight: bolder; margin-left: 430px;"><span class="text-warning">YOUR</span> CLASSROOM</h1>
+            <button class=" mt-3 btn btn-warning text-light" style="font-weight: bolder; margin-left: 600px; border-radius:0;">DISCOVER MORE</button>
+            <div class="" style="width: 900px; background: #0D1226; margin-left: 220px; margin-top: 165px;">
+                <div class="row">
+                    <div class="col-4 px-5 py-4">
+                        <h6><span class="bi bi-pencil-fill text-light"> ALL COURSES</span></h6>
+                    </div>
+                    <div class="col-4 px-5 py-4" style="border-left: 1px solid grey; border-right: 1px solid grey;">
+                        <h6><span class="bi bi-people-fill text-light"> VIRTUAL CLASS</span></h6>
+                    </div>
+                    <div class="col-4 px-5 py-4">
+                        <h6><span class="bi bi-book-fill text-light"> REAL MEETING</span></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <video style="margin-left:100px; z-index: -1;" src="course-video.mp4" autoplay muted height="655" loop></video>
+    </div>
+    <div style="background: url(choosing-bg.jpg); width: 100%;height: 660px;">
+        <p>g</p>
+        <div style="position: relative;">
+            <p class="text-light p-2" style="border: 1px solid grey; width: 213px; font-weight: bold; margin-left: 560px; margin-top: 70px;">Why choose Grad School?</p>
+            <div style="width: 1px; height: 95px; background: grey; position: absolute;top: -223%; left: 49.4%;"></div>
+        </div>
+        <div class="row" style="padding-left: 325px; margin-top: 80px;">
+            <div class="col-3">
+                <p class="mb-0" id="btn_p1" style="font-weight: bolder; color:goldenrod;">BEST EDUCATION</p>
+                <button id="btn1" onclick="best_e()" class="btn p-1 btn-warning" style="border-radius: 0; margin-left: 65px;"></button>
+            </div>
+            <div class="col-3">
+                <p class="mb-0" id="btn_p2" style="font-weight: bolder; color:white;">TOP MANAGEMENT</p>
+                <button id="btn2" onclick="top_m()" class="btn p-1 btn-light" style="border-radius: 0; margin-left: 75px;"></button>
+            </div>
+            <div class="col-3">
+                <p class=" mb-0" id="btn_p3" style="font-weight: bolder; color:white;">QUALITY MEETING</p>
+                <button id="btn3" onclick="quality_m()" class="btn p-1 btn-light" style="border-radius: 0; margin-left: 65px;"></button>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-6" style="padding-left: 200px;">
+                <img id="rasm1" src="choose-us-image-03.png" alt="" class="img-fluid" style="width: 80%; display: block;">
+                <img id="rasm2" src="choose-us-image-02.png" alt="" class="img-fluid" style="width: 80%; display: none;">
+                <img id="rasm3" src="choose-us-image-01.png" alt="" class="img-fluid" style="width: 80%; display: none;">
+            </div>
+            <div class="col-6 pt-5">
+                <h3 id="page2_h" class="text-light">Best Education</h3>
+                <p class="text-light" style="width: 77%;">Grad School is free educational HTML template with Bootstrap 4.5.2 CSS layout. Feel free to use it for educational or commercial purposes. You may want to make <a href="#">a little donation </a>to TemplateMo. Please tell your friends about us. Thank you.</p>
+            </div>
+        </div>
+    </div>
+    <div class="py-5" style="background:url(coming-soon-bg.jpg); width: 100%; height: 600px; background-size: 100%;">
+        <div class="row mt-5">
+            <div class="col-1"></div>
+            <div class="col-6 p-5">
+                <h2 class="text-light mx-2 mt-4" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bolder;">Take <span class="text-warning">any online course</span> and win $326 for your next class</h2>
+                <div class="row p-3">
+                    <div class="col-2 p-3 m-3" style="background: rgba(212, 212, 214, 0.2);">
+                        <h1 class="text-center text-light m-0" id="kun" style="font-family:serif,monospace; font-weight: bolder; font-size: 40px;">0</h1>
+                        <p class="text-center text-warning m-0" style="font-weight: bold;">DAYS</p>
+                    </div>
+                    <div class="col-2 p-3 m-3" style="background: rgba(212, 212, 214, 0.2);">
+                        <h1 class="text-center text-light m-0" id="soat" style="font-family:serif,monospace; font-weight: bolder; font-size: 40px;">0</h1>
+                        <p class="text-center text-warning m-0" style="font-weight: bold;">HOURS</p>
+                    </div>
+                    <div class="col-2 p-3 m-3" style="background: rgba(212, 212, 214, 0.2);">
+                        <h1 class="text-center text-light m-0" id="minut" style="font-family:serif,monospace; font-weight: bolder; font-size: 40px;">48</h1>
+                        <p class="text-center text-warning m-0" style="font-weight: bold;">MINUTES</p>
+                    </div>
+                    <div class="col-2 p-3 m-3" style="background: rgba(212, 212, 214, 0.2);">
+                        <h1 class="text-center text-light m-0" id="sekund" style="font-family:serif,monospace; font-weight: bolder; font-size: 40px;">33</h1>
+                        <p class="text-center text-warning m-0" style="font-weight: bold;">SECONDS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="background: transparent;">
+                    <div class="card-header py-4 px-5" style="background-color: rgba(238, 232, 232, 0.2);">
+                        <p class="text-light text-center" style="font-family: sans-serif;">Register your free account and get immediate access to online courses</p>
+                    </div>
+                    <div class="card-body py-5 px-4" style="background-color: rgba(238, 232, 232, 0.06);">
+                        <div class="form">
+                            <input type="text" placeholder="Your Name" class="form-control mb-3 inp" style="border-radius: 0; background:rgba(255,255,255,0.15); border:0;" required>
+                            <input type="text" placeholder="Your Email" class="form-control mt-3 inp" style="border-radius: 0; background:rgba(255,255,255,0.15); border:0;" required>
+                            <input type="text" placeholder="Your Phone Number" class="form-control mt-3 inp" style="border-radius: 0; background:rgba(255,255,255,0.15); border:0;" required>
+                            <button type="submit" class="btn btn-warning text-light px-4" style="border-radius: 0; font-weight: bold; margin-left: 120px; margin-top: 35px;">GET IT NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+    <div class="pb-5" style="background: url(choosing-bg.jpg); width: 100%;height: 680px;">
+        <p>g</p>
+        <div style="position: relative;">
+            <p class="text-light p-2 text-center" style="border: 1px solid grey; width: 213px; font-weight: bold; margin-left: 560px; margin-top: 70px;">Choose Your Course</p>
+            <div style="width: 1px; height: 95px; background: grey; position: absolute;top: -223%; left: 49.4%;"></div>
+        </div>
+        <!-- <p class="text-light py-2 px-4" style="border: 1px solid grey; width: 213px; font-weight: bold; margin-left: 560px; margin-top: 70px;">Choose Your Course</p> -->
+        <!-- <div class="row mt-0">
+            <div class="col-12"> -->
+                <div class="carousel slide m-5 " id="a" data-ride="carousel" data-interval="4000">
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active">
+                            <div class="card-deck">
+                                <div class="card">
+                                   <img src="img/courses-02.jpg" alt="">
+                                   <div class="card-body p-4">
+                                        <h5>BUSINESS WORLD</h5>
+                                        <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <img src="img/author-02.png" alt="" class="rounded-circle" style="border: 2px solid goldenrod;">
+                                            </div>
+                                            <div class="col-5"></div>
+                                            <div class="col-5 pt-2">
+                                                <a href="#" class="text-secondary">Free>></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="card">
+                                    <img src="img/courses-03.jpg" alt="">
+                                   <div class="card-body p-4">
+                                        <h5>BUSINESS WORLD</h5>
+                                        <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <img src="img/author-03.png" alt="" class="rounded-circle" style="border: 2px solid goldenrod;">
+                                            </div>
+                                            <div class="col-5"></div>
+                                            <div class="col-5 pt-2">
+                                                <a href="#" class="text-warning">Pay>></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                 <div class="card">
+                                    <img src="img/courses-04.jpg" alt="">
+                                   <div class="card-body p-4">
+                                        <h5>BUSINESS WORLD</h5>
+                                        <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <img src="img/author-04.png" alt="" class="rounded-circle" style="border: 2px solid goldenrod;">
+                                            </div>
+                                            <div class="col-5"></div>
+                                            <div class="col-5 pt-2">
+                                                <a href="#" class="text-secondary">Free>></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="card">
+                                    <img src="img/courses-05.jpg" alt="">
+                                   <div class="card-body p-4">
+                                        <h5>BUSINESS WORLD</h5>
+                                        <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <img src="img/author-05.png" alt="" class="rounded-circle" style="border: 2px solid goldenrod;">
+                                            </div>
+                                            <div class="col-5"></div>
+                                            <div class="col-5 pt-2">
+                                                <a href="#" class="text-warning">Pay>></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="card">
+                                    <img src="img/courses-01.jpg" alt="">
+                                   <div class="card-body p-4">
+                                        <h5>BUSINESS WORLD</h5>
+                                        <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <img src="img/author-01.png" alt="" class="rounded-circle" style="border: 2px solid goldenrod;">
+                                            </div>
+                                            <div class="col-5"></div>
+                                            <div class="col-5 pt-2">
+                                                <a href="#" class="text-secondary">Free>></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="carousel-item">
+                            <div class="card-deck">
+                                <div class="card">
+                                   <img src="img/courses-02.jpg" alt="">
+                                   <div class="card-body p-4">
+                                        <h5>BUSINESS WORLD</h5>
+                                        <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <img src="img/author-02.png" alt="" class="rounded-circle" style="border: 2px solid goldenrod;">
+                                            </div>
+                                            <div class="col-5"></div>
+                                            <div class="col-5 pt-2">
+                                                <a href="#" class="text-secondary">Free>></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="card">
+                                    <img src="img/courses-02.jpg" alt="">
+                                   <div class="card-body p-4">
+                                        <h5>BUSINESS WORLD</h5>
+                                        <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <img src="img/author-02.png" alt="" class="rounded-circle" style="border: 2px solid goldenrod;">
+                                            </div>
+                                            <div class="col-5"></div>
+                                            <div class="col-5 pt-2">
+                                                <a href="#" class="text-secondary">Free>></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                 <div class="card">
+                                    <img src="img/courses-02.jpg" alt="">
+                                   <div class="card-body p-4">
+                                        <h5>BUSINESS WORLD</h5>
+                                        <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <img src="img/author-02.png" alt="" class="rounded-circle" style="border: 2px solid goldenrod;">
+                                            </div>
+                                            <div class="col-5"></div>
+                                            <div class="col-5 pt-2">
+                                                <a href="#" class="text-secondary">Free>></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="card">
+                                    <img src="img/courses-02.jpg" alt="">
+                                   <div class="card-body p-4">
+                                        <h5>BUSINESS WORLD</h5>
+                                        <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <img src="img/author-02.png" alt="" class="rounded-circle" style="border: 2px solid goldenrod;">
+                                            </div>
+                                            <div class="col-5"></div>
+                                            <div class="col-5 pt-2">
+                                                <a href="#" class="text-secondary">Free>></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="card">
+                                    <img src="img/courses-02.jpg" alt="">
+                                   <div class="card-body p-4">
+                                        <h5>BUSINESS WORLD</h5>
+                                        <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <img src="img/author-02.png" alt="" class="rounded-circle" style="border: 2px solid goldenrod;">
+                                            </div>
+                                            <div class="col-5"></div>
+                                            <div class="col-5 pt-2">
+                                                <a href="#" class="text-secondary">Free>></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="carousel-item">
+                            <div class="card-deck">
+                                <div class="card">
+                                   <img src="img/courses-02.jpg" alt="">
+                                   <div class="card-body p-4">
+                                        <h5>BUSINESS WORLD</h5>
+                                        <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <img src="img/author-02.png" alt="" class="rounded-circle" style="border: 2px solid goldenrod;">
+                                            </div>
+                                            <div class="col-5"></div>
+                                            <div class="col-5 pt-2">
+                                                <a href="#" class="text-secondary">Free>></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="card">
+                                    <img src="img/courses-02.jpg" alt="">
+                                   <div class="card-body p-4">
+                                        <h5>BUSINESS WORLD</h5>
+                                        <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <img src="img/author-02.png" alt="" class="rounded-circle" style="border: 2px solid goldenrod;">
+                                            </div>
+                                            <div class="col-5"></div>
+                                            <div class="col-5 pt-2">
+                                                <a href="#" class="text-secondary">Free>></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                 <div class="card">
+                                    <img src="img/courses-02.jpg" alt="">
+                                   <div class="card-body p-4">
+                                        <h5>BUSINESS WORLD</h5>
+                                        <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <img src="img/author-02.png" alt="" class="rounded-circle" style="border: 2px solid goldenrod;">
+                                            </div>
+                                            <div class="col-5"></div>
+                                            <div class="col-5 pt-2">
+                                                <a href="#" class="text-secondary">Free>></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="card">
+                                    <img src="img/courses-02.jpg" alt="">
+                                   <div class="card-body p-4">
+                                        <h5>BUSINESS WORLD</h5>
+                                        <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <img src="img/author-02.png" alt="" class="rounded-circle" style="border: 2px solid goldenrod;">
+                                            </div>
+                                            <div class="col-5"></div>
+                                            <div class="col-5 pt-2">
+                                                <a href="#" class="text-secondary">Free>></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="card">
+                                    <img src="img/courses-02.jpg" alt="">
+                                   <div class="card-body p-4">
+                                        <h5>BUSINESS WORLD</h5>
+                                        <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <img src="img/author-02.png" alt="" class="rounded-circle" style="border: 2px solid goldenrod;">
+                                            </div>
+                                            <div class="col-5"></div>
+                                            <div class="col-5 pt-2">
+                                                <a href="#" class="text-secondary">Free>></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <a href="#" data-slide="next" class="carousel-control-next  " style="right: -75px; font-size: 35px ; font-weight: bold; width: 100px;" data-target="#a">
+                        <div class="bi bi-chevron-right "></div>
+                    </a>
+                    <a href="#" data-slide="next" class="carousel-control-next  " style="left: -75px; font-size: 35px ; font-weight: bold; width: 100px;" data-target="#a">
+                        <div class="bi bi-chevron-left "></div>
+                    </a>
+                    <ul class="carousel-indicators mb-5" style="bottom: -85px;">
+                        <li data-slide-to="0" data-target="#a" class=" bg-light active m-2" style="width: 10px; height: 10px;"></li>
+                        <li data-slide-to="1" data-target="#a" class="bg-light m-2" style="width: 10px; height: 10px;"></li>
+                        <li data-slide-to="2" data-target="#a" class="bg-light m-2" style="width: 10px; height: 10px;"></li>
+                    </ul>
+                
+            <!-- </div>
+        </div> -->
+    </div>
+    <div style="background: url(video-bg.jpg); width: 100%;height: 660px;">
+        <div class="row p-4">
+            <div class="col-1"></div>
+            <div class="col-5 px-5 py-4" style="margin-top: 130px;">
+                <p class="text-light">OUR PRESENTATION IS FOR YOU</p>
+                <h3 class="text-light">Watch the video to learn more <span class="text-warning">about Grad School</span></h3>
+                <p class="text-light">You are NOT allowed to redistribute ZIP file on any template collections website. However, you can use this template to convert into a specific theme for any kind of CMS platform such as WordPress. you may <a href="#">contact TemplateMo</a> for details.</p>
+                <p class="text-light mt-2">Suspendesse tincidunt, magna ut finibus rutrum, libero dolor euismod odio, nec interdum quam felis non ante.</p>
+                <button class="btn btn-warning text-light font-weight-bold" style="border-radius: 0;">EXTERNAL URL</button>
+            </div>
+            <div class="col-5 mt-5" style="background: url(img/main-thumb.png);">
+                <div class="row" style="margin-top: 410px;">
+                    <div class="col-12" style="height:75px; background: rgba(255,255,255,0.7);">
+                        <div class="row">
+                            <div class="col-10">
+                                <h5 class="mt-4 p-1" style="letter-spacing: 3px;">POWER HTML TEMPLATE</h5>
+                            </div>
+                            <div class="col-2">
+                                <button class="bi bi-play-circle-fill text-warning" style="font-size: 50px; border:none; border-radius:50%;background: transparent;"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+    <div class="pb-5" style="background: url(choosing-bg.jpg); width: 100%;">
+        <p>g</p>
+        <div style="position: relative;">
+            <p class="text-light p-2 pl-4" style="border: 1px solid grey; width: 213px; font-weight: bold; margin-left: 560px; margin-top: 70px;">Let's Keep In Touch!</p>
+            <div style="width: 1px; height: 95px; background: grey; position: absolute;top: -223%; left: 49.4%;"></div>
+        </div>
+    </div>
+
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
